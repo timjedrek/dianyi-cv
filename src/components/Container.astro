@@ -3,7 +3,7 @@ import { Icon } from "astro-icon/components";
 import AccordionLayout from "../layouts/AccordionLayout.astro";
 import * as about from "../pages/about/about.md";
 import Card from "./Card.astro";
-import ContactCard from "./ContactCard.astro";
+//import ContactCard from "./ContactCard.astro";
 const works = await Astro.glob("../pages/works/*.md");
 const projects = await Astro.glob("../pages/projects/*.md");
 const studies = await Astro.glob("../pages/studies/*.md");
@@ -32,6 +32,7 @@ const PDF = "/cv-20240219.pdf";
             tags={item.frontmatter.tags}
             url={item.url}
             url_name={item.frontmatter.institute}
+            description={item.compiledContent()}
           />
         );
       })
