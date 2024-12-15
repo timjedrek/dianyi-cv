@@ -20,6 +20,7 @@ const PDF = "/cv-20240219.pdf";
     </article>
   </AccordionLayout>
 
+  <!-- <AccordionLayout title={"Studies"} icon={"fluent:hat-graduation-20-regular"}> -->
   <AccordionLayout title={"Studies"} icon={"carbon:education"}>
     {
       studies.map((item) => {
@@ -37,7 +38,7 @@ const PDF = "/cv-20240219.pdf";
     }
   </AccordionLayout>
 
-  <AccordionLayout title={"Research"} icon={"carbon:tools"}>
+  <AccordionLayout title={"Research"} icon={"carbon:chemistry"}>
     {
       projects.map((item) => {
         return (
@@ -54,7 +55,7 @@ const PDF = "/cv-20240219.pdf";
     }
   </AccordionLayout>
   
-  <AccordionLayout title={"Work"} icon={"carbon:construction"}>
+  <AccordionLayout title={"Work"} icon={"carbon:chart-bubble"}>
     {
       works.map((item) => {
         return (
@@ -72,7 +73,7 @@ const PDF = "/cv-20240219.pdf";
     }
   </AccordionLayout>
 
-  <AccordionLayout title={"Teaching"} icon={"carbon:pen"}>
+  <AccordionLayout title={"Teaching"} icon={"carbon:cognitive"}>
     {
       blogs.map((item) => {
         return (
@@ -91,7 +92,7 @@ const PDF = "/cv-20240219.pdf";
 
   
 
-  <AccordionLayout title={"Outreach"} icon={"carbon:certificate"}>
+  <AccordionLayout title={"Outreach"} icon={"carbon:idea"}>
     {
       certificates.map((item) => {
         return (
@@ -108,7 +109,7 @@ const PDF = "/cv-20240219.pdf";
     }
   </AccordionLayout>
 
-  <AccordionLayout title={"Manuscripts"} icon={"carbon:certificate"}>
+  <AccordionLayout title={"Manuscripts"} icon={"carbon:document-multiple-02"}>
     {
       certificates.map((item) => {
         return (
@@ -142,7 +143,7 @@ const PDF = "/cv-20240219.pdf";
     }
   </AccordionLayout>
 
-  <AccordionLayout title={"CV"} icon={"carbon:volume-file-storage"}>
+  <AccordionLayout title={"CV"} icon={"carbon:document-attachment"}>
     <div class="flex justify-center w-full">
       <div
         class="card card-compact card-bordered border-[oklch(var(--s))] w-96 md:w-112 lg:w-128 hover:shadow-lg transition-all"
@@ -166,7 +167,7 @@ const PDF = "/cv-20240219.pdf";
     </div>
   </AccordionLayout>
 
-  <AccordionLayout title={"LinkedIn"} icon={"carbon:location-person"}>
+  <!-- <AccordionLayout title={"LinkedIn"} icon={"carbon:location-person"}>
     <div class="flex flex-wrap content-around gap-4 justify-center">
       {
         contact.map((item) => {
@@ -180,5 +181,13 @@ const PDF = "/cv-20240219.pdf";
         })
       }
     </div>
-  </AccordionLayout>
+  </AccordionLayout> -->
+  <a href="https://www.linkedin.com/in/dianyi-liu-3a1566319/" target="_blank">
+    <div class="collapse-title font-extrabold tracking-tight md:text-2xl">
+      <div class="flex">
+        <Icon name="carbon:location-person" class="w-8 h-8 mr-4" />
+        LinkedIn
+      </div>
+    </div>
+  </a>  
 </div>
