@@ -9,6 +9,7 @@ const research = await Astro.glob("../pages/research/*.md");
 const studies = await Astro.glob("../pages/studies/*.md");
 const outreach = await Astro.glob("../pages/outreach/*.md");
 const teaching = await Astro.glob("../pages/teaching/*.md");
+const manuscripts = await Astro.glob("../pages/manuscripts/*.md");
 const contact = await Astro.glob("../pages/contact/*.md");
 const PDF = "/cv-20240219.pdf";
 ---
@@ -115,7 +116,7 @@ const PDF = "/cv-20240219.pdf";
 
   <AccordionLayout title={"Manuscripts"} icon={"carbon:document-multiple-02"}>
     {
-      outreach.map((item) => {
+      manuscripts.map((item) => {
         return (
           <Card
             title={item.frontmatter.title}
@@ -123,7 +124,8 @@ const PDF = "/cv-20240219.pdf";
             description={item.compiledContent()}
             tags={item.frontmatter.tags}
             url={item.frontmatter.url}
-            url_name={"View Certificate"}
+            url_name={item.frontmatter.url_name}
+            location={item.frontmatter.location}
           />
         );
       })
