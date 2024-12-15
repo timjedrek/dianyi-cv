@@ -4,14 +4,14 @@ import AccordionLayout from "../layouts/AccordionLayout.astro";
 import * as about from "../pages/about/about.md";
 import Card from "./Card.astro";
 //import ContactCard from "./ContactCard.astro";
-const works = await Astro.glob("../pages/works/*.md");
-const research = await Astro.glob("../pages/research/*.md");
-const studies = await Astro.glob("../pages/studies/*.md");
-const outreach = await Astro.glob("../pages/outreach/*.md");
-const teaching = await Astro.glob("../pages/teaching/*.md");
-const manuscripts = await Astro.glob("../pages/manuscripts/*.md");
-const awards = await Astro.glob("../pages/awards/*.md");
-const contact = await Astro.glob("../pages/contact/*.md");
+const works = Object.values(import.meta.glob("../pages/works/*.md", { eager: true }));
+const research = Object.values(import.meta.glob("../pages/research/*.md", { eager: true }));
+const studies = Object.values(import.meta.glob("../pages/studies/*.md", { eager: true }));
+const outreach = Object.values(import.meta.glob("../pages/outreach/*.md", { eager: true }));
+const teaching = Object.values(import.meta.glob("../pages/teaching/*.md", { eager: true }));
+const manuscripts = Object.values(import.meta.glob("../pages/manuscripts/*.md", { eager: true }));
+const awards = Object.values(import.meta.glob("../pages/awards/*.md", { eager: true }));
+
 const PDF = "/Dianyi Liu CV.pdf";
 ---
 
