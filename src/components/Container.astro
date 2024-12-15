@@ -7,7 +7,7 @@ import Card from "./Card.astro";
 const works = await Astro.glob("../pages/works/*.md");
 const research = await Astro.glob("../pages/research/*.md");
 const studies = await Astro.glob("../pages/studies/*.md");
-const certificates = await Astro.glob("../pages/certificates/*.md");
+const outreach = await Astro.glob("../pages/outreach/*.md");
 const teaching = await Astro.glob("../pages/teaching/*.md");
 const contact = await Astro.glob("../pages/contact/*.md");
 const PDF = "/cv-20240219.pdf";
@@ -97,15 +97,16 @@ const PDF = "/cv-20240219.pdf";
 
   <AccordionLayout title={"Outreach"} icon={"carbon:idea"}>
     {
-      certificates.map((item) => {
+      outreach.map((item) => {
         return (
-          <Card
+        <Card
             title={item.frontmatter.title}
             timeframe={item.frontmatter.date}
             description={item.compiledContent()}
             tags={item.frontmatter.tags}
             url={item.frontmatter.url}
-            url_name={"View Certificate"}
+            url_name={item.frontmatter.url_name}
+            location={item.frontmatter.location}
           />
         );
       })
@@ -114,7 +115,7 @@ const PDF = "/cv-20240219.pdf";
 
   <AccordionLayout title={"Manuscripts"} icon={"carbon:document-multiple-02"}>
     {
-      certificates.map((item) => {
+      outreach.map((item) => {
         return (
           <Card
             title={item.frontmatter.title}
@@ -131,7 +132,7 @@ const PDF = "/cv-20240219.pdf";
 
   <AccordionLayout title={"Awards"} icon={"carbon:certificate"}>
     {
-      certificates.map((item) => {
+      outreach.map((item) => {
         return (
           <Card
             title={item.frontmatter.title}
