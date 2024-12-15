@@ -5,7 +5,7 @@ import * as about from "../pages/about/about.md";
 import Card from "./Card.astro";
 //import ContactCard from "./ContactCard.astro";
 const works = await Astro.glob("../pages/works/*.md");
-const projects = await Astro.glob("../pages/projects/*.md");
+const research = await Astro.glob("../pages/research/*.md");
 const studies = await Astro.glob("../pages/studies/*.md");
 const certificates = await Astro.glob("../pages/certificates/*.md");
 const blogs = await Astro.glob("../pages/blogs/*.md");
@@ -41,7 +41,7 @@ const PDF = "/cv-20240219.pdf";
 
   <AccordionLayout title={"Research"} icon={"carbon:chemistry"}>
     {
-      projects.map((item) => {
+      research.map((item) => {
         return (
           <Card
             title={item.frontmatter.title}
