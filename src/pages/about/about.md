@@ -1,7 +1,7 @@
 ---
 title: about
-name: "Cezar Kelso"
-designation: "Senior Detective"
+name: "Dianyi Liu"
+designation: "Phycologist. PhD in molecular and cell biology"
 location: Los Angeles, CA 90001
 pronouns: "he/him/el"
 website: "http://tafutza.hn/kos"
