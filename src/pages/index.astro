@@ -6,11 +6,11 @@ import Header from "../components/Header.astro";
 import { Icon } from "astro-icon/components";
 ---
 
-<html lang="gl">
+<html lang="en">
   <head>
     <script is:inline>
       if (localStorage.getItem("theme") === null) {
-        document.documentElement.setAttribute("data-theme", "lofi");
+        document.documentElement.setAttribute("data-theme", "black");
       } else
         document.documentElement.setAttribute(
           "data-theme",
