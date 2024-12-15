@@ -1,15 +1,11 @@
 ---
-title: Bachelor of Science in Criminal Justice
-location: University of California, Los Angeles (UCLA)
-url: http://foeberoz.gm/kuj
-institute: University of California
-date: 1970-1975
-tags:
-  [
-    "Criminal Justice",
-    "Law Enforcement",
-    "Legal Studies",
-    "Public Safety",
-    "Court System",
-  ]
+title: "Ph.D. in Cell and Molecular Biology"
+date: "August 2015 – December 2022"
+location: "University of Missouri, St. Louis, MO"
+tags: ["Ph.D.", "Molecular Biology", "GPA 4.0/4.0"]
+institute: "University of Missouri"
+url: "https://www.umsl.edu/"
+description: ""
 ---
+
+Focused on cell size control mechanisms in the multiple fission cell cycle of *Chlamydomonas*.

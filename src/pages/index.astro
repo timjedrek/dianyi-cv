@@ -6,11 +6,11 @@ import Header from "../components/Header.astro";
 import { Icon } from "astro-icon/components";
 ---
 
-<html lang="gl">
+<html lang="en">
   <head>
     <script is:inline>
       if (localStorage.getItem("theme") === null) {
-        document.documentElement.setAttribute("data-theme", "lofi");
+        document.documentElement.setAttribute("data-theme", "lightMode");
       } else
         document.documentElement.setAttribute(
           "data-theme",
@@ -22,7 +22,7 @@ import { Icon } from "astro-icon/components";
       themeChange();
     </script>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/png" href="/favicon.webp" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="generator" content={Astro.generator} />
     <title>Dianyi Liu Ph.D</title>
@@ -35,7 +35,7 @@ import { Icon } from "astro-icon/components";
       <Icon name="carbon:moon" class="w-4 h-4" />
       <input
         type="checkbox"
-        data-toggle-theme="black,lofi"
+        data-toggle-theme="black, lightMode"
         data-act-class="ACTIVECLASS"
         class="toggle toggle-sm mx-1 bg-secondary"
         checked
